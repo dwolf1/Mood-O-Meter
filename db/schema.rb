@@ -80,6 +80,12 @@ ActiveRecord::Schema.define(version: 20161109203427) do
     t.string   "lastname"
     t.string   "gender"
     t.string   "dob"
+    t.integer  "zip_code"
+    t.string   "relationship"
+    t.string   "education"
+    t.string   "political"
+    t.string   "ethnicity"
+    t.string   "religion"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

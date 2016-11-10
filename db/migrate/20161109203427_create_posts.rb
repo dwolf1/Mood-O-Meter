@@ -11,8 +11,6 @@ class CreatePosts < ActiveRecord::Migration[5.0]
     	t.integer :social_media
     	t.integer :socialization
     	t.integer :work
-        t.text :content
-        t.integer :rating
 
     	t.boolean :indulgence_1
     	t.boolean :indulgence_2
