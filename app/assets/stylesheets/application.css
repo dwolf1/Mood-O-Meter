@@ -40,9 +40,11 @@ body{
 #newUserForm{
 	text-align: center;
 	padding: 10px;
+
 }
 #newUserTitle{
 	text-decoration: underline;
+	text-align: center;
 }
 
 #signInTitle{
@@ -89,7 +91,7 @@ body{
 
 #signInForm{
 	text-align: center;
-
+	padding: 10px;
 }
 
 
