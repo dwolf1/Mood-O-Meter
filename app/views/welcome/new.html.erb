@@ -1,0 +1,74 @@
+
+<h2>Please help us learn a little more about you.</h2>
+<h5>This is all optional information but will help us get a better idea of who you are.</h5>
+
+<div class="profile_new" id="profile_questions">
+	<%= form_for @user, method: :patch, action: :update do |f|
+		<%= f.label "Current City" %>:
+    	<%= f.text_field :zip_code, autofocus: true, placeholder: 'zip code' %> <br>
+    	<%= f.label "Annual Income Range" %>:
+    	<%= f.select :income,[["$0-$20,000"],["$20,000-$40,000"],["$40,000-$80,000"],["$80,000-$150,000"],["$150,000+"]], autofocus: true %> <br>
+    	<%= f.label "Relationship Status" %>:
+    	<%= f.select :relationship, [["Single"],["Dating"],["Married"],["Divorced"],["Widowed"]], autofocus: true %> <br>
+    	<%= f.label "Education Level" %>:
+    	<%= f.select :education, [["High School"],["Bachelors"],["Graduate"],["PhD"],["Non-Graduate"]], autofocus: true, %> <br>
+    	<%= f.label "Political Affiliation" %>:
+    	<%= f.select :political, [["Far Left"],["Left Center"],["Centrist"],["Right Center"],["Far Right"]], autofocus: true %> <br>
+    	<%= f.select "Ethnicity" %>:
+    	<%= f.select :ethnicity,[["Black"],["White"],["Hispanic"],["Asian"],["Native American"],["Indian"],["Middle Eastern"],["Pacific Islander"]], autofocus:true %> <br>
+    	<%= f.select "Religion" %>:
+    	<%= f.select :religion,[["Christian"],["Jewish"],["Islam"],["Hindu"],["Buddhist"],["Other"],["Non-affiliated"]], autofocus:true %> <br>
+    	<%= f.submit "Create Profile" %>
+    <% end %>
+</div>
+
+<div class="profile_new" id="indulgence_form">
+	<h2>What are some indulgences that you partake in on a daily/weekly basis?</h2>
+	<%= form_for Custom.new do |f|
+	<%= f.label "Indulgence 1" %>:
+    <%= f.text_field :indulgence_1, autofocus: true, placeholder: 'ex: sweets' %> <br>
+    <%= f.label "Indulgence 2" %>:
+    <%= f.text_field :indulgence_2, autofocus: true, placeholder: 'ex: alcohol' %> <br>
+    <%= f.label "Indulgence 3" %>:
+    <%= f.text_field :indulgence_3, autofocus: true, placeholder: 'ex: big meal' %> <br>
+    <%= f.label "Indulgence 4" %>:
+    <%= f.text_field :indulgence_4, autofocus: true, placeholder: 'ex: drugs' %> <br>
+    <%= f.label "Indulgence 5" %>:
+    <%= f.text_field :indulgence_5, autofocus: true, placeholder: 'ex: video games' %> <br>
+</div>
+
+<div class="profile_new" id="responsibility_form">
+	<h2>What are some of your daily/weekly responsibilities?</h2>
+	<%= f.label "Responsibility 1" %>:
+    <%= f.text_field :responsibility_1, autofocus: true, placeholder: 'ex: work' %> <br>
+    <%= f.label "Responsibility 2" %>:
+    <%= f.text_field :responsibility_2, autofocus: true, placeholder: 'ex: commuting' %> <br>
+    <%= f.label "Responsibility 3" %>:
+    <%= f.text_field :responsibility_3, autofocus: true, placeholder: 'ex: cleaning' %> <br>
+    <%= f.label "Responsibility 4" %>:
+    <%= f.text_field :responsibility_4, autofocus: true, placeholder: 'ex: laundry' %> <br>
+    <%= f.label "Responsibility 5" %>:
+    <%= f.text_field :responsibility_5, autofocus: true, placeholder: 'ex: walk the dog' %> <br>
+</div>
+
+<div class="profile_new" id="activity_form">
+	<h2>What are some of your daily/weekly activities?</h2>
+	<%= f.label "Activity 1" %>:
+    <%= f.text_field :activity_1, autofocus: true, placeholder: 'ex: sports' %> <br>
+    <%= f.label "Activity 2" %>:
+    <%= f.text_field :activity_2, autofocus: true, placeholder: 'ex: exercise' %> <br>
+    <%= f.label "Activity 3" %>:
+    <%= f.text_field :activity_3, autofocus: true, placeholder: 'ex: hiking' %> <br>
+    <%= f.label "Activity 4" %>:
+    <%= f.text_field :activity_4, autofocus: true, placeholder: 'ex: reading' %> <br>
+    <%= f.label "Activity 5" %>:
+    <%= f.text_field :activity_5, autofocus: true, placeholder: 'ex: going for a walk' %> <br>
+</div>
+	<%= f.submit "Submit" %>
+	<% end %>
+
+
+
+
+
+
