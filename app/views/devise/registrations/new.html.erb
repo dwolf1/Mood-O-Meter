@@ -7,19 +7,19 @@
 
   <div class="field">
     <%= f.label "First Name" %>:   
-    <%= f.text_field :firstname, autofocus: true %>
+    <%= f.text_field :firstname, autofocus: true, autocomplete: "off" %>
     <br>
     <%= f.label "Last Name" %>:
-    <%= f.text_field :lastname, autofocus: true %>
+    <%= f.text_field :lastname, autofocus: true, autocomplete: "off" %>
     <br>
     <%= f.label "Email" %>:
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "off" %>
     <br>
     <%= f.label "Gender" %>:
-    <%= f.email_field :gender, autofocus: true %>
+    <%= f.text_field :gender, autofocus: true, autocomplete: "off" %>
     <br>
     <%= f.label "Date of birth" %>:
-    <%= f.email_field :dob, autofocus: true %>
+    <%= f.text_field :dob, autofocus: true, autocomplete: "off" %>
     <br>
     <%= f.label "Password" %>: 
     <% password_options =  @minimum_password_length ? {:placeholder => "#{@minimum_password_length} characters minimum" } : {} %>
@@ -37,8 +37,8 @@
   <% end %>
   <br>
   <div id="alreadyMember">
-  <h5> Already a member? Sign in.</h5>
-  <%= render "devise/shared/links" %>
+    <h5> Already a member? Sign in.</h5>
+    <%= render "devise/shared/links" %>
   </div>
   <br>
 </div>

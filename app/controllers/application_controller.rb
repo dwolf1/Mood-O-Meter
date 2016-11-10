@@ -5,4 +5,17 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.permit(:sign_up, keys: [ :firstname, :lastname, :dob, :gender, :email, :password, :password_confirmation])
      devise_parameter_sanitizer.permit(:account_update, keys: [ :firstname, :lastname, :dob, :gender, :email, :password, :password_confirmation])
  end
+
+ 	def new
+ 		@user = User.new
+ 		if (@user)
+  			redirect_to url_for(:controller => :posts, :action => :index)
+  			# if (@user)
+  				# redirect_to url_for '/posts'
+  			# else
+  				# redirect_to url_for '/users/sign_up' 				=> could also write like this
+  		else
+  			redirect_to url_for(:controller => :application, :action => :new)
+  		end
+ 	end
 end
