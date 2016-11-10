@@ -31,3 +31,84 @@ $color2: rgba(37, 65, 178, 1);
 $color3: rgba(23, 104, 172, 1);
 $color4: rgba(6, 190, 225, 1);
 $color5: rgba(255, 255, 255, 1);**/
+
+#newUserForm{
+	text-align: center;
+	padding: 10px;
+}
+#newUserTitle{
+	text-decoration: underline;
+}
+
+#signInTitle{
+	text-decoration: underline;
+}
+
+#user_firstname{
+	width: 200px;
+}
+
+#user_lastname{
+	width: 200px;
+}
+
+#user_email{
+	width: 200px;
+}
+
+#user_gender{
+	width: 200px;
+}
+
+#user_dob{
+	width: 200px;
+}
+
+#user_password{
+	width: 200px;
+}
+
+#user_password_confirmation{
+	width: 200px;
+}
+
+.field label{
+	width: 190px;
+	text-align: right;
+	display: inline-block;
+}
+
+#alreadyMember{
+	padding: 15px;
+}
+
+#signInForm{
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
