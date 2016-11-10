@@ -1,5 +1,8 @@
-<%= form_for @xyz do |f| %>
+<%= form_for @post do |f| %>
 	<div class="customizeForm">
+	<h2> Make your mood your own - customize your experience</h2>
+	<h4> Customize your daily indulgences: </h4>
+		<br>
 		<%= f.label @custom.indulgence_1 %>:
 		<br>
 		<%= f.text_field @post.indulgence_1 %>
@@ -22,6 +25,8 @@
 		<br>
 		<br>
 		<br>
+	<h4> Customize your daily responsibilities: </h4>
+		<br>
 		<%= f.label @custom.responsibility_1 %>:
 		<br>
 		<%= f.text_field @post.responsibility_1 %>
@@ -43,6 +48,8 @@
 		<%= f.text_field @post.responsibility_5 %>
 		<br>
 		<br>
+		<br>
+	<h4> Customize your daily activities: </h4>
 		<br>
 		<%= f.label @custom.activity_1 %>:
 		<br>
