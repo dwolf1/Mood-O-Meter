@@ -3,10 +3,49 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 *{
-	max-width: 90%;
 	margin: 0 auto;
+}
+
+
+body{
+	max-width: 90%;
+	// margin: 0 auto;
 }
 
 .wrapperExplain{
 	text-align: center;
+}
+
+#indexButtons{
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+	width:100%;
+}
+#indexButtons a {
+	text-decoration: none;
+}
+#index_BTN_in,
+#index_BTN_up{
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px #000;
+    min-width: 150px;
+    max-width: 250px;
+    min-height: 60px;
+    font-size: 15px;
+    color: #000;
+    font-family: Gill Sans, sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em;
+    padding: 1em 2em;
+    background: #FED218;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+#index_BTN_up a{
+	color: #000;
 }
