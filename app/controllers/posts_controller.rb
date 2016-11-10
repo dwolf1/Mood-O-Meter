@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 	end
 
 	def new
-		@custom = Custom.new
+		@custom = Custom.find(current_user.id)
 		@post = Post.new
 	end
 

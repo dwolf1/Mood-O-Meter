@@ -1,77 +1,134 @@
 <%= form_for @post do |f| %>
-<div class="customizeForm">
+	<div class="customizeForm">
 	<h2> Make your mood your own - customize your experience</h2>
-	<h4> Customize your daily indulgences: </h4>
-		<br>
-		<%= f.label @custom.indulgence_1 %>:
-		<br>
-		<%= f.text_field :indulgence_1 %>
-		<br>
-		<%= f.label @custom.indulgence_2 %>:
-		<br>
-		<%= f.text_field :indulgence_2 %>
-		<br>
-		<%= f.label @custom.indulgence_3 %>:
-		<br>
-		<%= f.text_field :indulgence_3 %>
-		<br>
-		<%= f.label @custom.indulgence_4 %>:
-		<br>
-		<%= f.text_field :indulgence_4 %>
-		<br>
-		<%= f.label @custom.indulgence_5 %>:
-		<br>
-		<%= f.text_field :indulgence_5 %>
-		<br>
-		<br>
-		<br>
-	<h4> Customize your daily responsibilities: </h4>
-		<br>
-		<%= f.label @custom.responsibility_1 %>:
-		<br>
-		<%= f.text_field :responsibility_1 %>
-		<br>
-		<%= f.label @custom.responsibility_2 %>:
-		<br>
-		<%= f.text_field :responsibility_2 %>
-		<br>
-		<%= f.label @custom.responsibility_3 %>:
-		<br>
-		<%= f.text_field :responsibility_3 %>
-		<br>
-		<%= f.label @custom.responsibility_4 %>:
-		<br>
-		<%= f.text_field :responsibility_4 %>
-		<br>
-		<%= f.label @custom.responsibility_5 %>:
-		<br>
-		<%= f.text_field :responsibility_5 %>
-		<br>
-		<br>
-		<br>
-	<h4> Customize your daily activities: </h4>
-		<br>
-		<%= f.label @custom.activity_1 %>:
-		<br>
-		<%= f.text_field :activity_1 %>
-		<br>
-		<%= f.label @custom.activity_2 %>:
-		<br>
-		<%= f.text_field :activity_2 %>
-		<br>
-		<%= f.label @custom.activity_3 %>:
-		<br>
-		<%= f.text_field :activity_3 %>
-		<br>
-		<%= f.label @custom.activity_4 %>:
-		<br>
-		<%= f.text_field :activity_4 %>
-		<br>
-		<%= f.label @custom.activity_5 %>:
-		<br>
-		<%= f.text_field :activity_5 %>
-		<br>
+	<h4>Constant Dailies: </h4>
+		<p>
+			<%= f.label :sleep %>:
+			<%= f.check_box :sleep %>
 
+			<%= f.label :water %>:
+			<%= f.check_box :water  %>
+
+			<%= f.label :breakfast %>:
+			<%= f.check_box :breakfast  %>
+
+			<%= f.label :lunch %>:
+			<%= f.check_box :lunch  %>
+
+			<%= f.label :dinner %>:
+			<%= f.check_box :dinner  %>
+
+			<%= f.label :tv %>:
+			<%= f.check_box :tv  %>
+
+			<%= f.label :social_media %>:
+			<%= f.check_box :social_media  %>
+
+			<%= f.label :socialization %>:
+			<%= f.check_box :socialization  %>
+
+			<%= f.label :work %>:
+			<%= f.check_box :work  %>
+			
+			<br><br>
+		</p>
+
+	<h4> Customize Your Daily Indulgences: </h4>
+		<p>
+		<% if @custom.indulgence_1 != nil %>
+			<%= f.label @custom.indulgence_1 %>:
+			<%= f.check_box :indulgence_1  %>
+		<% end %>
+		
+		<% if @custom.indulgence_2 != nil %>
+			<%= f.label @custom.indulgence_2 %>:
+			<%= f.check_box :indulgence_2  %>
+		<% end %>
+		
+		<% if @custom.indulgence_3 != nil %>
+			<%= f.label @custom.indulgence_3 %>:
+			<%= f.check_box :indulgence_3  %>
+		<% end %>
+		
+		<% if @custom.indulgence_4 != nil %>
+			<%= f.label @custom.indulgence_4 %>: 
+			<%= f.check_box :indulgence_4  %>
+		<% end %>
+		
+		<% if @custom.indulgence_5 != nil %>
+			<%= f.label @custom.indulgence_5 %>:
+			<%= f.check_box :indulgence_5  %>
+		<% end %>
+		<br><br>
+		</p>
+	<h4> Customize Your Daily Responsibilities: </h4>
+		<p>
+		<% if @custom.responsibility_1 != nil %>
+			<%= f.label @custom.responsibility_1 %>:
+			<%= f.check_box :responsibility_1  %>
+		<% end %>
+		
+		<% if @custom.responsibility_2 != nil %>
+			<%= f.label @custom.responsibility_2 %>:
+			<%= f.check_box :responsibility_2  %>
+		<% end %>
+		
+		<% if @custom.responsibility_3 != nil %>
+			<%= f.label @custom.responsibility_3 %>:
+			<%= f.check_box :responsibility_3  %>
+		<% end %>
+		
+		<% if @custom.responsibility_4 != nil %>
+			<%= f.label @custom.responsibility_4 %>:
+			<%= f.check_box :responsibility_4  %>
+		<% end %>
+		
+		<% if @custom.responsibility_5 != nil %>
+			<%= f.label @custom.responsibility_5 %>:
+			<%= f.check_box :responsibility_5  %>
+		<% end %>
+		<br><br>
+		</p>
+	<h4> Customize Your Daily Activities: </h4>
+		<p>
+		<% if @custom.activity_1 != nil %>
+			<%= f.label @custom.activity_1 %>:
+			<%= f.check_box :activity_1  %>
+		<% end %>
+		
+		<% if @custom.activity_2 != nil %>
+			<%= f.label @custom.activity_2 %>:
+			<%= f.check_box :activity_2  %>
+		<% end %>
+		
+		<% if @custom.activity_3 != nil %>
+			<%= f.label @custom.activity_3 %>:
+			<%= f.check_box :activity_3  %>
+		<% end %>
+		
+		<% if @custom.activity_4 != nil %>
+			<%= f.label @custom.activity_4 %>:
+			<%= f.check_box :activity_4  %>
+		<% end %>
+		
+		<% if @custom.activity_5 != nil %>
+			<%= f.label @custom.activity_5 %>:
+			<%= f.check_box :activity_5  %>
+		<% end %>
+		<br><br>
+		</p>
+
+	<h4>Create Entry</h4>
+		<p>
+			<%= f.label :content %>:
+			<%= f.text_area :content  %>
+		</p>
+		<br>
+		<p>
+			<%= f.label :rating %>:
+			<%= f.text_field :rating  %>
+		</p>
+		<br>
 		<%= f.submit "Customize My Data" %>
 	</div>
-	<% end %>
+<% end %>
