@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
   <h2>Sign up</h2>
+=======
+<div id="newUserForm">
+  <h2 id="newUserTitle">Sign up</h2>
+>>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
      <%= devise_error_messages! %>
@@ -26,7 +31,13 @@
     
       <br>
       <%= f.label "Password Confirmation" %>:
+<<<<<<< HEAD
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
+=======
+     <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      <br>
+     
+>>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
   </div>
 
   <div class="actions">
@@ -37,6 +48,11 @@
   <div id="alreadyMember">
     <h5> Already a member? Sign in.</h5>
     <%= render "devise/shared/links" %>
+<<<<<<< HEAD
 
   </div>
+=======
+  </div>
+</div>
+>>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
 

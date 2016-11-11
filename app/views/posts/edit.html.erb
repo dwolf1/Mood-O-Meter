@@ -29,9 +29,11 @@
 
 			<%= f.label :work %>:
 			<%= f.check_box :work  %>
+
 			
 			<%= f.label :rating %>:
 			<%= f.check_box :rating  %>
+
 			<br><br>
 		</p>
 
@@ -126,6 +128,13 @@
 			<%= f.text_area :content  %>
 		</p>
 		<br>
+
+		<p>
+			<%= f.label :rating %>:
+			<%= f.text_field :rating  %>
+		</p>
+		<br>
+
 		<%= f.submit "Customize My Data" %>
 	</div>
 <% end %>

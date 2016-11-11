@@ -1,4 +1,5 @@
 
+
 <div class="wrapper">
 	<h1 id="siteTitle"> The Mood-O-Meter </h1>
 	<br>
@@ -7,6 +8,22 @@
 <div id="indexButtons">
 
 	
+</div>
+
+
+<div class="wrapperExplain">
+	<h1 id="siteTitle"> The Mood-O-Meter </h1>
+	<br>
+<div id="indexButtons">
+	<%= link_to new_user_session_url do
+		button_tag "Sign In", id: "index_BTN_in"
+	end %> 
+	<%= link_to new_user_registration_url do
+		button_tag "Sign Up", id: "index_BTN_up"
+	end %>
+
+	<br>
+		
 </div>
 
 
