@@ -1,0 +1,74 @@
+
+<p>Constants</p>
+<ul>
+    <li>Sleep: <%= @post.sleep %></li>
+    <li>Water: <%= @post.water %></li>
+    <li>Breakfast: <%= @post.breakfast %></li>
+    <li>Lunch: <%= @post.lunch %></li>
+    <li>Dinner: <%= @post.dinner %></li>
+    <li>Television: <%= @post.tv %></li>
+    <li>Soical Media: <%= @post.social_media %></li>
+    <li>Socialization: <%= @post.socialization %></li>
+    <li>Work: <%= @post.work %></li>
+</ul>
+
+<p>Indulgences</p>
+<ul>
+    <% if @post.indulgence_1 == true %>
+    <li> <%= @custom.indulgence_1 %> </li>
+    <% end %>
+    <% if @post.indulgence_2 == true %>
+    <li> <%= @custom.indulgence_2 %> </li>
+    <% end %>
+    <% if @post.indulgence_3 == true %>
+    <li> <%= @custom.indulgence_3 %> </li>
+    <% end %>
+    <% if @post.indulgence_4 == true %>
+    <li> <%= @custom.indulgence_4 %> </li>
+    <% end %>
+    <% if @post.indulgence_5 == true %>
+    <li> <%= @custom.indulgence_5 %> </li>
+    <% end %>
+</ul>
+
+<p>Responsibilities</p>
+<ul>
+    <% if @post.responsibility_1 == true %>
+    <li> <%= @custom.responsibility_1 %> </li>
+    <% end %>
+    <% if @post.responsibility_2 == true %>
+    <li> <%= @custom.responsibility_2 %> </li>
+    <% end %>
+    <% if @post.responsibility_3 == true %>
+    <li> <%= @custom.responsibility_3 %> </li>
+    <% end %>
+    <% if @post.responsibility_4 == true %>
+    <li> <%= @custom.responsibility_4 %> </li>
+    <% end %>
+    <% if @post.responsibility_5 == true %>
+    <li> <%= @custom.responsibility_5 %> </li>
+    <% end %>
+</ul>
+
+<p>Daily Activities</p>
+<ul>
+    <% if @post.activity_1 == true %>
+    <li> <%= @custom.activity_1 %> </li>
+    <% end %>
+    <% if @post.activity_2 == true %>
+    <li> <%= @custom.activity_2 %> </li>
+    <% end %>
+    <% if @post.activity_3 == true %>
+    <li> <%= @custom.activity_3 %> </li>
+    <% end %>
+    <% if @post.activity_4 == true %>
+    <li> <%= @custom.activity_4 %> </li>
+    <% end %>
+    <% if @post.activity_5 == true %>
+    <li> <%= @custom.activity_5 %> </li>
+    <% end %>
+</ul>
+
+<p>Content: <%= @post.content %></p>
+<p>Rating: <%= @post.rating %></p>
+
