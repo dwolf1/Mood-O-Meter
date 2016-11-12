@@ -35,9 +35,10 @@ $color1: rgba(3, 37, 108, 1);
 $color2: rgba(37, 65, 178, 1);
 $color3: rgba(23, 104, 172, 1);
 $color4: rgba(6, 190, 225, 1);
-$color5: rgba(255, 255, 255, 1);
+$color5: rgba(255, 255, 255, 1);**/
 
-**/
+
+
 
 *{
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,Times;
@@ -51,6 +52,19 @@ body{
 /*	background-color: #D4ECFC;*/
 }
 
+#navbarMini{
+	float: left;
+	width: 100%;
+}
+
+
+#linkProfile, 
+#linkUp, 
+#linkIn, 
+#linkOut,
+#explanation{
+	text-decoration: none;
+}
 
 #newUserForm{
 	text-align: center;

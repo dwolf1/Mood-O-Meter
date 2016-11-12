@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
 	
+
 	def index
 		
 	end
@@ -34,6 +35,4 @@ class WelcomeController < ApplicationController
       		religion: params[:user][:religion],
    		)
 	end
-
-
 end

@@ -6,26 +6,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
   </head>
 
   <body>
 
  	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
-	
 
   <div id="navbarMini">
     <% if user_signed_in? %>
 		  <span>Welcome, <%= current_user.firstname %>!</span>
-        <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-        <%= link_to "My Profile", posts_path %>
+        <%= link_to "Sign Out", destroy_user_session_path, :id => "linkOut", method: :delete %>
+        <%= link_to "My Profile", posts_path, :id => "linkProfile" %>
     <% else %>
-        <%= link_to "How This Works", welcome_path%>
-        <%= link_to "Sign Up", new_user_registration_path %>
-        <%= link_to "Sign In", user_session_path %>
+        <%= link_to "How This Works", welcome_path, :id => "explanation" %>
+        <%= link_to "Sign Up", new_user_registration_path, :id => "linkUp" %>
+        <%= link_to "Sign In", user_session_path, :id => "linkIn" %>
     <% end %>
   </div>
     <%= yield %>
+  </script>
+
   </body>
 </html>
 

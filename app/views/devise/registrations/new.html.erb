@@ -1,9 +1,8 @@
+
 <div id="newUserForm">
   <h2 id="newUserTitle">Sign up</h2>
-
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
      <%= devise_error_messages! %>
-
     <div class="field">
       <%= f.label "First Name" %>:   
       <%= f.text_field :firstname, autofocus: true, autocomplete: "off" %>
@@ -23,12 +22,10 @@
       <%= f.label "Password" %>: 
       <% password_options =  @minimum_password_length ? {:placeholder => "#{@minimum_password_length} characters minimum" } : {} %>
       <%= f.password_field :password, password_options.merge(autocomplete: "off")  %>
-    
       <br>
       <%= f.label "Password Confirmation" %>:
      <%= f.password_field :password_confirmation, autocomplete: "off" %>
       <br>
-     
   </div>
 
   <div class="actions">
