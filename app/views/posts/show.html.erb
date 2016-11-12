@@ -13,30 +13,60 @@
 
 <p>Indulgences</p>
 <ul>
-    <li> <%= @custom.indulgence_1 %>: <%=  @post.indulgence_1 %> </li>
-    <li> <%= @custom.indulgence_2 %>: <%=  @post.indulgence_2 %> </li>
-    <li> <%= @custom.indulgence_3 %>: <%=  @post.indulgence_3 %> </li>
-    <li> <%= @custom.indulgence_4 %>: <%=  @post.indulgence_4 %> </li>
-    <li> <%= @custom.indulgence_5 %>: <%=  @post.indulgence_5 %> </li>
+    <% if @post.indulgence_1 == true %>
+    <li> <%= @custom.indulgence_1 %> </li>
+    <% end %>
+    <% if @post.indulgence_2 == true %>
+    <li> <%= @custom.indulgence_2 %> </li>
+    <% end %>
+    <% if @post.indulgence_3 == true %>
+    <li> <%= @custom.indulgence_3 %> </li>
+    <% end %>
+    <% if @post.indulgence_4 == true %>
+    <li> <%= @custom.indulgence_4 %> </li>
+    <% end %>
+    <% if @post.indulgence_5 == true %>
+    <li> <%= @custom.indulgence_5 %> </li>
+    <% end %>
 </ul>
 
 <p>Responsibilities</p>
 <ul>
-    <li> <%= @custom.responsibility_1 %>: <%=  @post.responsibility_1 %> </li>
-    <li> <%= @custom.responsibility_2 %>: <%=  @post.responsibility_2 %> </li>
-    <li> <%= @custom.responsibility_3 %>: <%=  @post.responsibility_3 %> </li>
-    <li> <%= @custom.responsibility_4 %>: <%=  @post.responsibility_4 %> </li>
-    <li> <%= @custom.responsibility_5 %>: <%=  @post.responsibility_5 %> </li>
+    <% if @post.responsibility_1 == true %>
+    <li> <%= @custom.responsibility_1 %> </li>
+    <% end %>
+    <% if @post.responsibility_2 == true %>
+    <li> <%= @custom.responsibility_2 %> </li>
+    <% end %>
+    <% if @post.responsibility_3 == true %>
+    <li> <%= @custom.responsibility_3 %> </li>
+    <% end %>
+    <% if @post.responsibility_4 == true %>
+    <li> <%= @custom.responsibility_4 %> </li>
+    <% end %>
+    <% if @post.responsibility_5 == true %>
+    <li> <%= @custom.responsibility_5 %> </li>
+    <% end %>
 </ul>
 
 <p>Daily Activities</p>
 <ul>
-    <li> <%= @custom.activity_1 %>: <%=  @post.activity_1 %> </li>
-    <li> <%= @custom.activity_2 %>: <%=  @post.activity_2 %> </li>
-    <li> <%= @custom.activity_3 %>: <%=  @post.activity_3 %> </li>
-    <li> <%= @custom.activity_4 %>: <%=  @post.activity_4 %> </li>
-    <li> <%= @custom.activity_5 %>: <%=  @post.activity_5 %> </li>
+    <% if @post.activity_1 == true %>
+    <li> <%= @custom.activity_1 %> </li>
+    <% end %>
+    <% if @post.activity_2 == true %>
+    <li> <%= @custom.activity_2 %> </li>
+    <% end %>
+    <% if @post.activity_3 == true %>
+    <li> <%= @custom.activity_3 %> </li>
+    <% end %>
+    <% if @post.activity_4 == true %>
+    <li> <%= @custom.activity_4 %> </li>
+    <% end %>
+    <% if @post.activity_5 == true %>
+    <li> <%= @custom.activity_5 %> </li>
+    <% end %>
 </ul>
 
-<p><%= @post.content %></p>
-<p><%= @post.rating %></p>
+<p>Content: <%= @post.content %></p>
+<p>Rating: <%= @post.rating %></p>

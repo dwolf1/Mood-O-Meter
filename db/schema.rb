@@ -10,7 +10,60 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109180239) do
+ActiveRecord::Schema.define(version: 20161109203427) do
+
+  create_table "customs", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "indulgence_1"
+    t.string   "indulgence_2"
+    t.string   "indulgence_3"
+    t.string   "indulgence_4"
+    t.string   "indulgence_5"
+    t.string   "responsibility_1"
+    t.string   "responsibility_2"
+    t.string   "responsibility_3"
+    t.string   "responsibility_4"
+    t.string   "responsibility_5"
+    t.string   "activity_1"
+    t.string   "activity_2"
+    t.string   "activity_3"
+    t.string   "activity_4"
+    t.string   "activity_5"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "sleep"
+    t.integer  "water"
+    t.string   "breakfast"
+    t.string   "lunch"
+    t.string   "dinner"
+    t.integer  "tv"
+    t.integer  "social_media"
+    t.integer  "socialization"
+    t.integer  "work"
+    t.text     "content"
+    t.integer  "rating"
+    t.boolean  "indulgence_1"
+    t.boolean  "indulgence_2"
+    t.boolean  "indulgence_3"
+    t.boolean  "indulgence_4"
+    t.boolean  "indulgence_5"
+    t.boolean  "responsibility_1"
+    t.boolean  "responsibility_2"
+    t.boolean  "responsibility_3"
+    t.boolean  "responsibility_4"
+    t.boolean  "responsibility_5"
+    t.boolean  "activity_1"
+    t.boolean  "activity_2"
+    t.boolean  "activity_3"
+    t.boolean  "activity_4"
+    t.boolean  "activity_5"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
