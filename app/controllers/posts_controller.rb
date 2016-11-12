@@ -90,7 +90,6 @@ class PostsController < ApplicationController
       		activity_4: params[:post][:activity_4],
       		activity_5: params[:post][:activity_5]
     	})
-
 	    if (@post)
 	      redirect_to url_for(:controller => :posts, :action => :show)
 	    else

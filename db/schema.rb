@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.integer  "social_media"
     t.integer  "socialization"
     t.integer  "work"
+    t.text     "content"
+    t.integer  "rating"
     t.boolean  "indulgence_1"
     t.boolean  "indulgence_2"
     t.boolean  "indulgence_3"
