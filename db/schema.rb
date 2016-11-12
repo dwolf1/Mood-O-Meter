@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161109203427) do
+=======
+ActiveRecord::Schema.define(version: 20161110205942) do
+>>>>>>> master
 
   create_table "customs", force: :cascade do |t|
     t.integer  "user_id"
@@ -64,6 +68,21 @@ ActiveRecord::Schema.define(version: 20161109203427) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
   end
+<<<<<<< HEAD
+=======
+
+  create_table "profiles", force: :cascade do |t|
+    t.integer  "zip_code"
+    t.string   "relationship"
+    t.string   "education"
+    t.string   "income"
+    t.string   "political"
+    t.string   "ethnicity"
+    t.string   "religion"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+>>>>>>> master
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

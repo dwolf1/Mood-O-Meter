@@ -6,5 +6,3 @@ class AddNameToUsers < ActiveRecord::Migration[5.0]
     add_column :users, :dob, :string 
   end
 end
-
-# this page allows us to add information to the devise_create_users.rb table

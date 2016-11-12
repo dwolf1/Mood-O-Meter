@@ -6,5 +6,6 @@ class User < ApplicationRecord
 
   has_many :posts
   has_one :custom
+  has_one :profile
 
 end
