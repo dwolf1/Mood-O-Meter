@@ -1,19 +1,6 @@
 class WelcomeController < ApplicationController
 	
-<<<<<<< HEAD
-	# def update
-	#  	@user = User.find(params[:id])
-	#  	@profile.update(
- #      		zip_code: params[:user][:zip_code],
- #      		income: params[:user][:income],
- #      		relationship: params[:user][:relationship],
- #      		education: params[:user][:education],
- #      		political: params[:user][:political],
- #      		ethnicity: params[:user][:ethnicity],
- #      		religion: params[:user][:religion],
- #   		)
-	# end
-=======
+
 	def index
 		
 	end
@@ -48,7 +35,4 @@ class WelcomeController < ApplicationController
       		religion: params[:user][:religion],
    		)
 	end
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
-
-
 end

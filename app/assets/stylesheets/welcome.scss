@@ -9,20 +9,33 @@
 
 
 body{
-	max-width: 90%;
+	max-width: 95%;
 	// margin: 0 auto;
 }
+
 
 .wrapperExplain{
 	text-align: center;
 }
 
-<<<<<<< HEAD
+#welcomeImage{
+	width: 350px;
+	border: 1px solid white;
+	border-radius: 200px;
+	position: relative;
 
-.wrapperExplain{
-=======
+}
+
+.subHead{
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,Times;
+	font-weight: 400;
+	font-size: 13pt;
+	letter-spacing: .1rem;
+}
+
+
 #indexButtons{
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
+
 	text-align: center;
 	padding: 10px;
 	display: inline-block;
@@ -35,18 +48,20 @@ body{
 #index_BTN_up{
 	border: 1px solid #000;
 	border-radius: 5px;
-	box-shadow: 3px 3px 10px #000;
-    min-width: 150px;
-    max-width: 250px;
+	box-shadow: 3px 3px 15px #000;
+    width: 132px;
+    // min-width: 100px;
+    // max-width: 130px;
     min-height: 60px;
     font-size: 15px;
     color: #000;
-    font-family: Gill Sans, sans-serif;
+    // font-family: Gill Sans, sans-serif;
     cursor: pointer;
     display: inline-block;
     margin: 1em;
     padding: 1em 2em;
-    background: #FED218;
+    // background: #FED218;
+    background: white;
     vertical-align: middle;
     position: relative;
     z-index: 1;

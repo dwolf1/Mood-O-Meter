@@ -4,14 +4,13 @@ class PostsController < ApplicationController
 	end
 
 	def new
-<<<<<<< HEAD
+
 		@custom = Custom.new
 		@post = Post.new
 	end
 
 	def create
   		@post = Post.find(params[:id])
-=======
 		@custom = Custom.find(current_user.id)
 	end
 
@@ -44,12 +43,11 @@ class PostsController < ApplicationController
       		activity_4: params[:post][:activity_4],
       		activity_5: params[:post][:activity_5])
 
-    	if @new_post
+    	       if @new_post
       		redirect_to posts_path
-    	else
+    	       else
       		redirect_to new_post_path
-    	end
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
+    	       end
 	end
 
 	def show
@@ -90,12 +88,9 @@ class PostsController < ApplicationController
       		activity_2: params[:post][:activity_2],
       		activity_3: params[:post][:activity_3],
       		activity_4: params[:post][:activity_4],
-<<<<<<< HEAD
       		activity_5: params[:post][:activity_5]
     	})
-=======
-      		activity_5: params[:post][:activity_5]})
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
+
 	    if (@post)
 	      redirect_to url_for(:controller => :posts, :action => :show)
 	    else

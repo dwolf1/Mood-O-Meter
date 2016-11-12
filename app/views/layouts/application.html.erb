@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mood-O-Meter</title>
+    <title>Mood O Meter</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,21 +14,40 @@
 
  	<p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
-	<% if user_signed_in? %>
 
-		<span>Welcome, <%= current_user.email %></span> 
-
-		<span>Welcome, <%= current_user.firstname %> !</span> 
-
-		<%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
-	<% else %>
-		
-	<% end %>
-
-
-
+  <div id="navbarMini">
+    <% if user_signed_in? %>
+		  <span>Welcome, <%= current_user.firstname %>!</span>
+        <%= link_to "Sign Out", destroy_user_session_path, :id => "linkOut", method: :delete %>
+        <%= link_to "My Profile", posts_path, :id => "linkProfile" %>
+    <% else %>
+        <%= link_to "How This Works", welcome_path, :id => "explanation" %>
+        <%= link_to "Sign Up", new_user_registration_path, :id => "linkUp" %>
+        <%= link_to "Sign In", user_session_path, :id => "linkIn" %>
+    <% end %>
+  </div>
     <%= yield %>
   </script>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,10 +9,6 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.permit(:account_update, keys: [ :firstname, :lastname, :dob, :gender, :email, :password, :password_confirmation, :zip_code, :relationship, :education, :political, :ethnicity, :religion])
  end
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
  	def new
  		@user = User.new
  		if (@user)

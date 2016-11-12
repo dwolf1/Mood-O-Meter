@@ -35,34 +35,45 @@ $color1: rgba(3, 37, 108, 1);
 $color2: rgba(37, 65, 178, 1);
 $color3: rgba(23, 104, 172, 1);
 $color4: rgba(6, 190, 225, 1);
-<<<<<<< HEAD
-<<<<<<< HEAD
 $color5: rgba(255, 255, 255, 1);**/
 
-=======
-$color5: rgba(255, 255, 255, 1);
 
-**/
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
+
+
+*{
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,Times;
+	font-weight: 400;
+	letter-spacing: .1rem;
+	line-height: 1.7;
+}
 
 body{
 	min-width: 700px;
+/*	background-color: #D4ECFC;*/
+}
+
+#navbarMini{
+	float: left;
+	width: 100%;
+}
+
+
+#linkProfile, 
+#linkUp, 
+#linkIn, 
+#linkOut,
+#explanation{
+	text-decoration: none;
 }
 
 #newUserForm{
 	text-align: center;
 	padding: 10px;
-<<<<<<< HEAD
-}
-#newUserTitle{
-	text-decoration: underline;
-=======
 
 }
 #newUserTitle{
 	text-decoration: underline;
 	text-align: center;
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
 }
 
 #signInTitle{
@@ -109,11 +120,7 @@ body{
 
 #signInForm{
 	text-align: center;
-<<<<<<< HEAD
-
-=======
 	padding: 10px;
->>>>>>> 293f69c9682b5bf07dffc5cb8cb6b2bfcf95b721
 }
 
 
