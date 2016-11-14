@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 	end
 
 	def new
-    @custom = Custom.find(current_user.id)
+    @custom = Custom.where(["user_id = ?", current_user.id]).first
 		@post = Post.new
 	end
 
