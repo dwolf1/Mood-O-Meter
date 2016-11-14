@@ -1,40 +1,40 @@
+
 <div id="newPostform">
 	<h2> [ Create New Entry ] </h2>
 	<%= form_for @post do |f| %>
 		<%= f.hidden_field :user_id, value: current_user.id %>
 		<div class="customizeForm" class="pure-form pure-form-aligned">
 			<p>
-				<h4> We strongly suggest that you fill in the fields below to return the most accurate data possible. </h4>
-			<hr>
-				<h6> Consider your actions in the previous 24 hours, did you...</h6>
-					<%= f.label :sleep, "Get 7+ hours of sleep:" %>
-					<%= f.check_box :sleep %>
-					<br>
-					<%= f.label :water, "Drink 4+ cups of water:" %>
-					<%= f.check_box :water  %>
-					<br>
-					<%= f.label :breakfast, "Eat breakfast:" %>
-					<%= f.check_box :breakfast  %>
-					<br>
-					<%= f.label :lunch, "Eat lunch:" %>
-					<%= f.check_box :lunch  %>
-					<br>
-					<%= f.label :dinner, "Eat dinner:" %>
-					<%= f.check_box :dinner  %>
-					<br>
-					<%= f.label :tv, "Watch TV:" %>
-					<%= f.check_box :tv  %>
-					<br>
-					<%= f.label :social_media, "Use social media:" %>
-					<%= f.check_box :social_media  %>
-					<br>
-					<%= f.label :socialization, "Socialize with friends/family:" %>
-					<%= f.check_box :socialization  %>
-					<br>
-					<%= f.label :work, "Work:" %>
-					<%= f.check_box :work  %>
-					
-					<br><br>
+			<h4> We strongly suggest that you fill in the fields below to return the most accurate data possible. </h4>
+		<hr>
+			<h6> Consider your actions in the previous 24 hours, did you...</h6>
+				<%= f.label :sleep, "Get 7+ hours of sleep:" %>
+				<%= f.check_box :sleep %>
+				<br>
+				<%= f.label :water, "Drink 4+ cups of water:" %>
+				<%= f.check_box :water  %>
+				<br>
+				<%= f.label :breakfast, "Eat breakfast:" %>
+				<%= f.check_box :breakfast  %>
+				<br>
+				<%= f.label :lunch, "Eat lunch:" %>
+				<%= f.check_box :lunch  %>
+				<br>
+				<%= f.label :dinner, "Eat dinner:" %>
+				<%= f.check_box :dinner  %>
+				<br>
+				<%= f.label :tv, "Watch TV:" %>
+				<%= f.check_box :tv  %>
+				<br>
+				<%= f.label :social_media, "Use social media:" %>
+				<%= f.check_box :social_media  %>
+				<br>
+				<%= f.label :socialization, "Socialize with friends/family:" %>
+				<%= f.check_box :socialization  %>
+				<br>
+				<%= f.label :work, "Work:" %>
+				<%= f.check_box :work  %>
+				<br><br>
 			</p>
 			<hr>
 			<h4> Your Daily Indulgences: </h4>
@@ -147,3 +147,4 @@
 <br>
 <br>
 <br>
+

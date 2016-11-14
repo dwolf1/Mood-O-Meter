@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
 	def index
 		@post = Post.all
+		
+    @user = User.find(current_user.id)
+    @profile = Profile.find(current_user.id)
+
 		@user = User.find(current_user.id)
 		@writing_post = selecting_columns_by_id(current_user.id)
 
