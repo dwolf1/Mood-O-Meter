@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.string   "activity_5"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["user_id"], name: "index_customs_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -63,6 +64,7 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.boolean  "activity_5"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
   create_table "profiles", force: :cascade do |t|
