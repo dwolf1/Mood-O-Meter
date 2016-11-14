@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
  	def new
  		@user = User.new
  		if (@user)
-  			redirect_to url_for(:controller => :posts, :action => :index)
+  			redirect_to url_for(:controller => :profiles, :action => :new)
   			# if (@user)
   				# redirect_to url_for '/posts'
   			# else
@@ -21,4 +21,11 @@ class ApplicationController < ActionController::Base
   			redirect_to url_for(:controller => :application, :action => :new)
   		end
  	end
+
+
+  def after_sign_in_path_for (resource)
+    new_profile_path
+  end
+
+
 end
