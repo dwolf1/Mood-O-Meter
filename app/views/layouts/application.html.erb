@@ -19,7 +19,7 @@
   <br>
   <div id="navbarMini">
     <% if user_signed_in? %>
-		  <span>Welcome, <%= current_user.firstname.capitalize %>!</span>
+		  <span>Welcome, <%= current_user.firstname %>!</span>
         <%= link_to "|| My Profile ||", posts_path, :id => "linkProfile" %>
         <%= link_to " New Entry ||", new_post_path, :id => "linkPost" %>
         <%= link_to " Sign Out ||", destroy_user_session_path, :id => "linkOut", method: :delete %>
