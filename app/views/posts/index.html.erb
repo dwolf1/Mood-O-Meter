@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <body>
 <ul  id="post_nav_bar" id="post_nav_bar">
 	<li><a href="#" class="scroll-link" data-id="profile_info">Profile Info</a></li>
@@ -6,7 +5,7 @@
  	<li><a href="#" class="scroll-link" data-id="graph">Mood Data</a></li>
   <li><a href="#" class="scroll-link" data-id="post_history">Post History</a></li>
 </ul>
-
+<br><br>
 
 <div id="profile_info" class="page-section">
   <div class="col-lg-6">
@@ -24,74 +23,41 @@
       Religion <%= @profile.religion %>
   </div>
 </div>
+<br><br><br><br>
 
-</br>
-</br>
-<div id="last_post" class="page-section">
-	<p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content </p>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 <div id="graph" class="page-section">
+  <h3 style="text-align: center">Your Mood Graph</h3><br>
 	<p> 
     <svg width="660" height="300"></svg> 
   </p>
 </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 
-<div id="post_history" class="page-section">
-	<p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content </p>
+<div id="post_history" class="page-section" style="text-align: center">
+  <h3 style="text-align: center">Your Post History</h3><br>
+	<p> 
+    <div class="container-fluid" >
+    <div class="table-responsive">
+      <table class="table" >
+      <tr>
+        <td>Post ID</td>
+        <td>Time Stamp</td>
+        <td>Link To</td>
+      </tr>
+      <% @post.each do |post| %>
+        <% if post.user_id == current_user.id %>
+      <tr>
+        <td><%= post.id %></td>
+        <td><%= post.created_at %></td>
+        <td><%= link_to 'Show', post_path(post.id) %></td>
+      </tr>
+        <% end %>
+      <% end %>
+    </table>
+    </div>
+</div>
+  </p>
 </div>
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 </body>
 
 

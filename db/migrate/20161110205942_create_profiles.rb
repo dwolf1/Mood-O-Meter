@@ -9,7 +9,7 @@ class CreateProfiles < ActiveRecord::Migration[5.0]
     	t.string :political
     	t.string :ethnicity
     	t.string :religion
-      	t.timestamps
+      t.timestamps
     end
   end
 end

@@ -23,11 +23,6 @@
         |<%= link_to " My Profile ", posts_path, :id => "linkProfile" %>
         |<%= link_to " Sign Out ", destroy_user_session_path, :id => "linkOut", method: :delete %>
 
-		  <span>Welcome, <%= current_user.firstname %>!</span>
-        |<%= link_to " My Profile ", posts_path, :id => "linkProfile" %>
-        |<%= link_to " New Entry ", new_post_path, :id => "linkPost" %>
-        |<%= link_to " Sign Out ", destroy_user_session_path, :id => "linkOut", method: :delete %>
-
     <% else %>
         |<%= link_to " How This Works ", welcome_path, :id => "explanation" %>
         |<%= link_to " Sign Up ", new_user_registration_path, :id => "linkUp" %>

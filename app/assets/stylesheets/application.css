@@ -37,6 +37,12 @@ $color3: rgba(23, 104, 172, 1);
 $color4: rgba(6, 190, 225, 1);
 $color5: rgba(255, 255, 255, 1);**/
 
+svg {
+	display: block;
+	margin: 0 auto 50px auto;
+	text-align: center;
+}
+
 .axis--x path {
   display: none;
 }
@@ -57,6 +63,7 @@ $color5: rgba(255, 255, 255, 1);**/
 body{
 	min-width: 700px;
 /*	background-color: #D4ECFC;*/
+	margin: 0 auto;
 }
 
 
