@@ -9,18 +9,22 @@
 
 
 <div id="profile_info" class="page-section">
-	<p>Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content </p>
+  <div class="col-lg-6">
+      First Name: <%= @user.firstname %> <br>
+      Last Name: <%= @user.lastname %> <br>
+      Date of birth: <%= @user.dob %> <br>
+      Gender: <%= @user.gender %> <br>
+  </div>
+  <div class="col-lg-6">
+      Zip Code: <%= @profile.zip_code %>
+      Income: <%= @profile.income %>
+      Relationship Status <%= @profile.education %>
+      Political Affiliation <%= @profile.political %>
+      Ethnicity <%= @profile.ethnicity %>
+      Religion <%= @profile.religion %>
+  </div>
 </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
 </br>
 </br>
 <div id="last_post" class="page-section">
