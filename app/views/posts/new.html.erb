@@ -4,7 +4,7 @@
 	<h2> Make your mood your own - customize your experience</h2>
 	<h4> Customize your daily indulgences: </h4>
 		<br>
-		<%= f.label @custom.indulgence_1 %>:
+		<%= @custom.indulgence_1 %>:
 		<br>
 		<%= f.text_field :indulgence_1 %>
 		<br>
@@ -198,17 +198,8 @@
 		</p>
 
 	<h4>Create Entry</h4>
-		<p>
-			<%= f.label :content %>:
-			<%= f.text_area :content  %>
-		</p>
-		<br>
-		<p>
-			<%= f.label :rating %>:
-			<%= f.text_field :rating  %>
-		</p>
-		<br>
-		<%= f.submit "Customize My Data" %>
+		
+		
 	</div>
 <% end %>
 

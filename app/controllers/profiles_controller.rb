@@ -10,8 +10,8 @@ class ProfilesController < ApplicationController
 	end 
 
 	def create
-		@user = User.find_by_id(current_user.id) 
-		@profile = Profile.new(profile_params)
+		#@user = User.find_by_id(current_user.id) 
+		@profile = Profile.new(profile_params.merge(user_id: current_user.id))
 		if @profile.save
 			redirect_to '/customs/new'
 		end

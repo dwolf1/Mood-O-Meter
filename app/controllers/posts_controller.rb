@@ -4,13 +4,12 @@ class PostsController < ApplicationController
 	end
 
 	def new
-
-		@custom = Custom.new
+    @custom = Custom.find(current_user.id)
 		@post = Post.new
 	end
 
 	def create
-  		@post = Post.find(params[:id])
+  	@post = Post.find(params[:id])
 		@custom = Custom.find(current_user.id)
 	end
 
@@ -57,7 +56,7 @@ class PostsController < ApplicationController
 
 	def edit
 		@post = Post.find(params[:id])
-		@custom = Custom.find(params[:id])
+		#@custom = Custom.find(params[:id])
 	end
 
 	def update 

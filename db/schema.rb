@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20161110205942) do
   end
 
   create_table "profiles", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "zip_code"
     t.string   "relationship"
     t.string   "education"
