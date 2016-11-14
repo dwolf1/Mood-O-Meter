@@ -58,6 +58,8 @@ body{
 	float: left;
 	width: 100%;
 	text-align: right;
+	border-bottom: 1px solid grey;
+	/*padding-bottom: 50px;*/
 }
 
 
@@ -124,6 +126,22 @@ body{
 #signInForm{
 	text-align: center;
 	padding: 10px;
+}
+
+/*Post Index Styling*/
+
+#post_nav_bar {
+	position: fixed;
+    display: inline-block;
+    right: 100px;
+    top: 70px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.page-section {
+	margin-left: 50px;
+	margin-right: 120px;
 }
 
 
