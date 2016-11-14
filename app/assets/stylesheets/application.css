@@ -119,4 +119,18 @@ label#pwordCon{
 	padding: 10px;
 }
 
+#newPostform{
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#explo{
+	width: 75%;
+}
+
+hr{
+	size: 150%;
+}
+
 
