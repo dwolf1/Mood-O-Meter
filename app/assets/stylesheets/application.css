@@ -52,6 +52,8 @@ body{
 /*	background-color: #D4ECFC;*/
 }
 
+
+
 #navbarMini{
 	float: left;
 	width: 100%;
@@ -110,7 +112,7 @@ body{
 }
 
 .field label{
-	width: 150px;
+	width: 175px;
 	text-align: right;
 	display: inline-block;
 }
