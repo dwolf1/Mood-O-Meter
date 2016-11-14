@@ -14,9 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-<<<<<<< HEAD
 //= require d3
-=======
 
 $(document).ready(function() {
 	// navigation click actions	
@@ -52,7 +50,5 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
->>>>>>> master
-
 
   
