@@ -24,9 +24,12 @@ class ApplicationController < ActionController::Base
 
 
   def after_sign_in_path_for (resource)
-    new_profile_path
-    posts_path
 
+    if Custom.where(["user_id = ?", current_user.id]).first 
+       posts_path
+    else
+       new_profile_path
+    end
   end
 
 
