@@ -31,11 +31,7 @@ class PostsController < ApplicationController
 
 	def edit
 		@post = Post.find(params[:id])
-<<<<<<< HEAD
 		@custom = Custom.find(current_user.id)
-=======
-		#@custom = Custom.find(params[:id])
->>>>>>> master
 	end
 
 	def update 
@@ -56,10 +52,8 @@ class PostsController < ApplicationController
   end
 
   def selecting_columns_by_id(id)
-  	keys = ['date', 'rating']
   	array = Post.where(:user_id => id).pluck( :created_at, :rating ).map { |a| "#{a[0].strftime( '%d-%b-%y')}\t#{a[1]}" }.join("\n")
-  	puts array
-	return array
+	  return array
   end
 
 end
