@@ -55,6 +55,7 @@ body{
 #navbarMini{
 	float: left;
 	width: 100%;
+	text-align: right;
 }
 
 
