@@ -1,3 +1,53 @@
 // Place all the styles related to the profile controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#newWrapper{
+	text-align: center;
+}
+
+.pure-control-group label{
+	width: 175px !important;
+	display: inline-block !important;
+}
+
+input#profile_zip_code.textfield{
+	height: 32px !important;
+	padding: 0px !important;
+}
+
+.pure-control-group .textfield,
+.pure_form select {
+	width: 175px !important;
+	text-align: left !important;
+}
+
+select#profile_education,
+select#profile_income,
+select#profile_religion,
+select#profile_relationship,
+select#profile_political,
+select#profile_ethnicity,
+select#profile_religion {
+	width: 175px !important;
+}
+
+input#custom_responsibility_1,
+input#custom_responsibility_2,
+input#custom_responsibility_3,
+input#custom_responsibility_4,
+input#custom_responsibility_5,
+input#custom_indulgence_1,
+input#custom_indulgence_2,
+input#custom_indulgence_3,
+input#custom_indulgence_4,
+input#custom_indulgence_5,
+input#custom_activity_1,
+input#custom_activity_2,
+input#custom_activity_3,
+input#custom_activity_4,
+input#custom_activity_5{
+	width: 175px !important;
+	height: 32px !important;
+	text-align: left !important;
+}
