@@ -1,3 +1,31 @@
 // Place all the styles related to the profile controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+	margin: 0;
+  	padding: 0;
+}
+
+.profile_questions_content {
+	margin: auto;
+    width: 50%;
+
+}
+
+.submit_button_profile {
+	margin: auto;
+	width: 10%;
+}
+
+.pure-control-group {
+	margin: auto;
+	width: 60%;
+}
+
+.profile_title {
+	margin: auto;
+	width: 50%;
+	padding-top: 20px;
+}
