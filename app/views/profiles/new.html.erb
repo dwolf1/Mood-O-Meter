@@ -1,53 +1,128 @@
-<div class="profile_title">
-<h2>Please help us learn a little more about you.</h2>
-<h5>This is all optional information but will help us get a better idea of who you are.</h5>
+<div id="newWrapper">
+    <h2>Please help us learn a little more about you.</h2>
+    <h6>This is all optional information but will help us get a better idea of who you are.</h6>
+    <div class="slider">
+    <div class="pure-form pure-form-aligned" id="profile_questions">
+    	<%= form_for Profile.new do |f| %>
+            <fieldset>
+    		<div class="pure-control-group">
+            <%= f.label :current_city, "Current City:" %>
+        	<%= f.text_field :zip_code, autofocus: true, placeholder: ' zip code', :class => "textfield" %> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :annual_income_range, "Annual Income Range:" %>
+        	<%= f.select :income,[["$0-$20,000"],["$20,000-$40,000"],["$40,000-$80,000"],["$80,000-$150,000"],["$150,000+"]], autofocus: true%> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :relationship_status, "Relationship Status:" %>
+        	<%= f.select :relationship, [["Single"],["Dating"],["Married"],["Divorced"],["Widowed"]], autofocus: true%> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :education_level, "Education Level:" %>
+        	<%= f.select :education, [["High School"],["Bachelors"],["Graduate"],["PhD"],["Non-Graduate"]], autofocus: true %> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :political_affiliation, "Political Affiliation:" %>
+        	<%= f.select :political, [["Very Liberal"],["Somewhat Liberal"],["Centrist"],["Somewhat Conservative"],["Very Conservative"], ["None of the above"]], autofocus: true %> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :ethnicity,"Ethnicity:" %>
+        	<%= f.select :ethnicity,[["Black"],["White"],["Hispanic"],["Asian"],["Native American"],["Indian"],["Middle Eastern"],["Pacific Islander"]], autofocus:true %> <br>
+            </div>
+            <div class="pure-control-group">
+        	<%= f.label :religion, "Religion:" %>
+        	<%= f.select :religion,[["Christian"],["Jewish"],["Muslim"],["Hindu"],["Buddhist"],["Other"],["Non-affiliated"]], autofocus:true %> <br>
+            </div>
+            <div class="pure-control-group">
+            <%= f.submit "Create Profile" %>
+            </div>
+            </fieldset>
+        <% end %>
+    </div>
+
+    <div class="pure-form pure-form-aligned" id="indulgence_form">
+        <h2>What are some indulgences that you partake in on a daily/weekly basis?</h2>
+    <fieldset>
+    	<%= form_for Custom.new do |f| %>
+        <div class="pure-control-group">
+    	<%= f.label :indulgence_1, "Indulgence 1:" %>
+        <%= f.text_field :indulgence_1, autofocus: true, placeholder: 'ex: sweets' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :indulgence_2, "Indulgence 2:" %>
+        <%= f.text_field :indulgence_2, autofocus: true, placeholder: 'ex: alcohol' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :indulgence_3, "Indulgence 3:" %>
+        <%= f.text_field :indulgence_3, autofocus: true, placeholder: 'ex: big meal' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :indulgence_4, "Indulgence 4:" %>
+        <%= f.text_field :indulgence_4, autofocus: true, placeholder: 'ex: drugs' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :indulgence_5, "Indulgence 5:" %>
+        <%= f.text_field :indulgence_5, autofocus: true, placeholder: 'ex: video games' %> <br>
+        </div>
+    </fieldset>
+    </div>
+
+    <div class="pure-form pure-form-aligned" id="responsibility_form">
+
+    	<h2>What are some of your daily/weekly responsibilities?</h2>
+    <fieldset>
+        <div class="pure-control-group">
+    	<%= f.label :responsibility_1, "Responsibility 1:" %>
+        <%= f.text_field :responsibility_1, autofocus: true, placeholder: 'ex: work' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :responsibility_2, "Responsibility 2:" %>
+        <%= f.text_field :responsibility_2, autofocus: true, placeholder: 'ex: commuting' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :responsibility_3, "Responsibility 3:" %>
+        <%= f.text_field :responsibility_3, autofocus: true, placeholder: 'ex: cleaning' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :responsibility_4, "Responsibility 4:" %>
+        <%= f.text_field :responsibility_4, autofocus: true, placeholder: 'ex: laundry' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :responsibility_5, "Responsibility 5:" %>
+        <%= f.text_field :responsibility_5, autofocus: true, placeholder: 'ex: walk the dog' %> <br>
+        </div>
+    </fieldset>
+    </div>
+
+    <div class="pure-form pure-form-aligned" id="activity_form">
+    	<h2>What are some of your daily/weekly activities?</h2>
+    <fieldset>
+        <div class="pure-control-group">
+    	<%= f.label :activity_1, "Activity 1:" %>
+        <%= f.text_field :activity_1, autofocus: true, placeholder: 'ex: sports' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :activity_2, "Activity 2:" %>
+        <%= f.text_field :activity_2, autofocus: true, placeholder: 'ex: exercise' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :activity_3, "Activity 3:" %>
+        <%= f.text_field :activity_3, autofocus: true, placeholder: 'ex: hiking' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :activity_4, "Activity 4:" %>
+        <%= f.text_field :activity_4, autofocus: true, placeholder: 'ex: reading' %> <br>
+        </div>
+        <div class="pure-control-group">
+        <%= f.label :activity_5, "Activity 5:" %>
+        <%= f.text_field :activity_5, autofocus: true, placeholder: 'ex: going for a walk' %> <br>
+        </div>
+    </fieldset>
+    </div>
+    	<%= f.submit "Submit" %>
+    	<% end %>
+    </div>
 </div>
-
-<div class="pure-form pure-form-aligned" class="profile_questions">
-	<%= form_for Profile.new do |f| %>
-        <fieldset>
-        <div class="profile_questions_content">
-		<div class="pure-control-group">
-        <%= f.label "Current City" %>:
-    	<%= f.text_field :zip_code, autofocus: true, placeholder: 'zip code' %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Annual Income Range" %>:
-    	<%= f.select :income,[["$0-$20,000"],["$20,000-$40,000"],["$40,000-$80,000"],["$80,000-$150,000"],["$150,000+"]], autofocus: true %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Relationship Status" %>:
-    	<%= f.select :relationship, [["Single"],["Dating"],["Married"],["Divorced"],["Widowed"]], autofocus: true %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Education Level" %>:
-    	<%= f.select :education, [["High School"],["Bachelors"],["Graduate"],["PhD"],["Non-Graduate"]], autofocus: true %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Political Affiliation" %>:
-    	<%= f.select :political, [["Far Left"],["Left Center"],["Centrist"],["Right Center"],["Far Right"]], autofocus: true %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Ethnicity" %>:
-    	<%= f.select :ethnicity,[["Black"],["White"],["Hispanic"],["Asian"],["Native American"],["Indian"],["Middle Eastern"],["Pacific Islander"]], autofocus:true %> <br>
-        </div>
-        <div class="pure-control-group">
-    	<%= f.label "Religion" %>:
-    	<%= f.select :religion,[["Christian"],["Jewish"],["Islam"],["Hindu"],["Buddhist"],["Other"],["Non-affiliated"]], autofocus:true %> <br>
-        </div>
-        </div>
-        <div class="submit_button_profile">
-        <%= f.submit "Create Profile" %>
-        </div>
-
-        </fieldset>
-    <% end %>
-</div>
-
-
-
-
-
-
-
+    <br>
+    <br>
 
