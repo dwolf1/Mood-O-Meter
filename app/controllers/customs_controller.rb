@@ -9,8 +9,8 @@ class CustomsController < ApplicationController
 	end 
 
 	def create
-		# @user = User.find_by_id(current_user.id) 
-		@custom = Custom.new(custom_params.merge( {user_id: current_user.id} ))
+		@custom = Custom.new(custom_params.merge(user_id: current_user.id))
+		p @custom
 			if @custom.save
 				redirect_to '/posts/new'
 			end

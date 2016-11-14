@@ -1,6 +1,9 @@
+
 	<h2> Make a new entry </h2>
-	<%= form_for Post.new do |f| %>
-		<div class="customizeForm" class="pure-form pure-form-aligned">
+
+<%= form_for @post do |f| %>
+	<%= f.hidden_field :user_id, value: current_user.id %>
+	<div class="customizeForm" class="pure-form pure-form-aligned">
 		<p>
 			<h4> Required fields </h4>
 				<%= f.label :sleep, "Sleep:" %>
@@ -134,4 +137,8 @@
 		</div>
 	<% end %>
 
+	<h4>Create Entry</h4>
+		<%= f.text_field :content %>	
+	</div>
+<% end %>
 
