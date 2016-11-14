@@ -90,32 +90,18 @@ body{
 	text-decoration: underline;
 }
 
-#user_firstname{
-	width: 200px;
-}
-
-#user_lastname{
-	width: 200px;
-}
-
-#user_email{
-	width: 200px;
-}
-
-#user_gender{
-	width: 200px;
-}
-
-#user_dob{
-	width: 200px;
-}
-
-#user_password{
-	width: 200px;
-}
-
+#user_firstname,
+#user_lastname,
+#user_email,
+#user_gender,
+#user_dob,
+#user_password,
 #user_password_confirmation{
 	width: 200px;
+}
+
+label#pwordCon{
+	width:175px;
 }
 
 .field label{

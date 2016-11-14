@@ -7,10 +7,10 @@
       <%= f.label :firstname, "First Name:" %>   
       <%= f.text_field :firstname, autofocus: true, autocomplete: "off" %>
       <br>
-      <%= f.label "Last Name" %>:
+      <%= f.label :lastname, "Last Name:" %>
       <%= f.text_field :lastname, autofocus: true, autocomplete: "off" %>
       <br>
-      <%= f.label :lastname, "Email:" %>
+      <%= f.label :email, "Email:" %>
       <%= f.email_field :email, autofocus: true, autocomplete: "off" %>
       <br>
       <%= f.label :gender, "Gender:" %>
@@ -23,19 +23,19 @@
       <% password_options =  @minimum_password_length ? {:placeholder => "#{@minimum_password_length} characters minimum" } : {} %>
       <%= f.password_field :password, password_options.merge(autocomplete: "off")  %>
       <br>
-      <%= f.label :password_confirmation, "Password Confirmation:" %>
+      <%= f.label :password_confirmation, "Confirm Password:", :id => "pwordCon" %>
      <%= f.password_field :password_confirmation, autocomplete: "off" %>
       <br>
   </div>
-
+  <br>
   <div class="actions">
      <%= f.submit "Sign up" %>
   </div>
   <% end %>
   <br>
   <div id="alreadyMember">
-    <h5> Already a member? Sign in.</h5>
-    <%= render "devise/shared/links" %>
+    <h5> Already a member?</h5>
+        <%= render "devise/shared/links" %>
   </div>
 </div>
 
