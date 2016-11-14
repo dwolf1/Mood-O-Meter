@@ -1,83 +1,6 @@
-
 <%= form_for @post do |f| %>
-	<div class="customizeForm">
-	<h2> Make your mood your own - customize your experience</h2>
-	<h4> Customize your daily indulgences: </h4>
-		<br>
-		<%= f.label @custom.indulgence_1 %>:
-		<br>
-		<%= f.text_field :indulgence_1 %>
-		<br>
-		<%= f.label @custom.indulgence_2 %>:
-		<br>
-		<%= f.text_field :indulgence_2 %>
-		<br>
-		<%= f.label @custom.indulgence_3 %>:
-		<br>
-		<%= f.text_field :indulgence_3 %>
-		<br>
-		<%= f.label @custom.indulgence_4 %>:
-		<br>
-		<%= f.text_field :indulgence_4 %>
-		<br>
-		<%= f.label @custom.indulgence_5 %>:
-		<br>
-		<%= f.text_field :indulgence_5 %>
-		<br>
-		<br>
-		<br>
-	<h4> Customize your daily responsibilities: </h4>
-		<br>
-		<%= f.label @custom.responsibility_1 %>:
-		<br>
-		<%= f.text_field :responsibility_1 %>
-		<br>
-		<%= f.label @custom.responsibility_2 %>:
-		<br>
-		<%= f.text_field :responsibility_2 %>
-		<br>
-		<%= f.label @custom.responsibility_3 %>:
-		<br>
-		<%= f.text_field :responsibility_3 %>
-		<br>
-		<%= f.label @custom.responsibility_4 %>:
-		<br>
-		<%= f.text_field :responsibility_4 %>
-		<br>
-		<%= f.label @custom.responsibility_5 %>:
-		<br>
-		<%= f.text_field :responsibility_5 %>
-		<br>
-		<br>
-		<br>
-	<h4> Customize your daily activities: </h4>
-		<br>
-		<%= f.label @custom.activity_1 %>:
-		<br>
-		<%= f.text_field :activity_1 %>
-		<br>
-		<%= f.label @custom.activity_2 %>:
-		<br>
-		<%= f.text_field :activity_2 %>
-		<br>
-		<%= f.label @custom.activity_3 %>:
-		<br>
-		<%= f.text_field :activity_3 %>
-		<br>
-		<%= f.label @custom.activity_4 %>:
-		<br>
-		<%= f.text_field :activity_4 %>
-		<br>
-		<%= f.label @custom.activity_5 %>:
-		<br>
-		<%= f.text_field :activity_5 %>
-		<br>
+	<%= f.hidden_field :user_id, value: current_user.id %>
 
-		<%= f.submit "Customize My Data" %>
-	</div>
-	<% end %>
-
-<%= form_for Post.new do |f| %>
 	<div class="customizeForm">
 	<h2> Make your mood your own - customize your experience</h2>
 	<h4>Constant Dailies: </h4>
@@ -211,4 +134,3 @@
 		<%= f.submit "Customize My Data" %>
 	</div>
 <% end %>
-

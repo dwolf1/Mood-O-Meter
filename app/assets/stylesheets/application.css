@@ -37,8 +37,15 @@ $color3: rgba(23, 104, 172, 1);
 $color4: rgba(6, 190, 225, 1);
 $color5: rgba(255, 255, 255, 1);**/
 
+.axis--x path {
+  display: none;
+}
 
-
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
 
 *{
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,Times;

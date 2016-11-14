@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20161109203427) do
-=======
 ActiveRecord::Schema.define(version: 20161110205942) do
->>>>>>> master
 
   create_table "customs", force: :cascade do |t|
     t.integer  "user_id"
@@ -35,6 +31,7 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.string   "activity_5"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["user_id"], name: "index_customs_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -67,11 +64,11 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.boolean  "activity_5"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
   end
-<<<<<<< HEAD
-=======
 
   create_table "profiles", force: :cascade do |t|
+    t.integer  "user_id"
     t.integer  "zip_code"
     t.string   "relationship"
     t.string   "education"
@@ -81,8 +78,8 @@ ActiveRecord::Schema.define(version: 20161110205942) do
     t.string   "religion"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
->>>>>>> master
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
