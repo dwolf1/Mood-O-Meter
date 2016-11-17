@@ -1,6 +1,4 @@
 # Mood-O-Meter
-
-## Description: 
 A rails application that allows users to track their mood. This is done by filling out a daily entry that would include:
 * A customized checklist of activities completed
 * A mood rating
