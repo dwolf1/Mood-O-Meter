@@ -3,6 +3,7 @@ A rails application that allows users to track their mood. This is done by filli
 * A customized checklist of activities completed
 * A mood rating
 * A text post
+
 This data is later aggregated to create a graph that allows users to compare their mood to specific actions completed and see how they or if they correlate. 
 
 ## Collaborators:
